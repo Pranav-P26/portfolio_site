@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Title</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Pranav Pramod</h1>
+        <ul>
+            <li><a href="#">// Home</a></li>
+            <li><a href="#about">// About</a></li>
+            <li><a href="projects.html">// Projects</a></li>
+            <li><a href="contacts.html">// Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p class="hero-kicker">// Hi, I'm Pranav!</p>
+        <h2>Innovating solutions for a smarter future</h2>
+        <p>I build software that turns technology into a tool for real-world impact.</p>
+        <a href="#about" class="hero-link">About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-copy">
+                <div class="about-slider">
+                    <div class="about-slider-header">
+                        <span class="about-slide-count">01 / 05</span>
+                        <div class="about-controls">
+                            <button type="button" class="about-arrow" data-about-prev aria-label="Previous about slide">
+                                &larr;
+                            </button>
+                            <button type="button" class="about-arrow" data-about-next aria-label="Next about slide">
+                                &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <article class="about-slide is-active">
+                        <h3>Background</h3>
+                        <p>
+                            Hi, I’m Pranav Pramod, a computer science student at the Morris County School of Technology
+                            and a member of the Class of 2027. I’ve been building my skills as a developer for around
+                            six years, and over time, I’ve become especially interested in
+                            <span class="text-accent">data science</span>,
+                            <span class="text-accent">software engineering</span>, and using technology to solve
+                            meaningful problems.
+                        </p>
+                    </article>
+
+                    <article class="about-slide">
+                        <h3>Purpose</h3>
+                        <p>
+                            I’m currently based in Denville, New Jersey, and I’m interning at
+                            <a href="https://www.talonbiomarkers.com/" target="_blank" rel="noopener noreferrer">Talon Biomarkers</a>,
+                            where I support cell analysis through data analytics in flow cytometry. I’m drawn to projects
+                            where <span class="text-accent">code has a real purpose</span>, whether that means improving
+                            accessibility, expanding education, or helping people interact
+                            with technology in a simpler way.
+                        </p>
+                    </article>
+
+                    <article class="about-slide">
+                        <h3>Collaboration</h3>
+                        <p>
+                            A lot of my best work has come from collaboration. I believe that when people bring
+                            different ideas and skills together, the final result is usually
+                            <span class="text-accent">stronger, more creative, and more useful</span> than anything one
+                            person could build alone.
+                        </p>
+                    </article>
+
+                    <article class="about-slide">
+                        <h3>Sophomore Year</h3>
+                        <p>
+                            Over the past few years, I’ve competed in a variety of technical competitions that have
+                            pushed me to grow as both a developer and a teammate. In my sophomore year, my team and I
+                            became national finalists in the NASA App Development Challenge after building a simulation
+                            of <span class="text-accent">NASA’s Artemis II mission</span> and analyzing mission data.
+                            That summer, we competed in EmpowerHacks 2.0, where we created an educational platform
+                            inspired by the UN’s fourth Sustainable Development Goal: quality education. Our goal was to
+                            make STEM learning more accessible to underrepresented communities, and we ended up as
+                            <span class="text-accent">one of the winning teams</span>.
+                        </p>
+                    </article>
+
+                    <article class="about-slide">
+                        <h3>Junior Year</h3>
+                        <p>
+                            In my junior year, I competed at TSA States in Software Development and Engineering Design.
+                            For Software Development, my team built an app to help
+                            <span class="text-accent">visually impaired users</span> order food more easily, placing
+                            fourth overall. For Engineering Design, we created a theoretical solution for detecting life
+                            on Europa, one of Jupiter’s moons, using microfluidic technology. We
+                            <span class="text-accent">placed first</span> and will be competing at TSA Nationals in
+                            Washington, D.C. I also competed in Garden State CTF, where my team placed and was invited
+                            to the Garden State Cyber Summit. There, we participated as
+                            <span class="text-accent">blue team specialists</span> in a live-fire exercise focused on
+                            mitigating a ransomware attack. We placed fourth, and it was one of the most fun and intense
+                            cybersecurity experiences I’ve had so far.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="about-gallery" aria-label="About image gallery">
+                <img class="about-photo about-photo-main" src="../static/images/portrait.jpg" alt="Portrait photo">
+                <img class="about-photo" src="../static/images/nasa_adc.webp" alt="About gallery photo">
+                <img class="about-photo" src="../static/images/garden_state.webp" alt="About gallery photo">
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/script.js" defer></script>
+</body>
+
+</html>

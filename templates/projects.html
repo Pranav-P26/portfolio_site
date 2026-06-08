@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Pranav Pramod</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Pranav Pramod</h1>
+        <ul>
+            <li><a href="index.html">// Home</a></li>
+            <li><a href="index.html#about">// About</a></li>
+            <li><a href="projects.html">// Projects</a></li>
+            <li><a href="contacts.html">// Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <p class="hero-kicker">// Projects</p>
+            <h2>Selected work and experiments</h2>
+            <p>A collection of software projects, technical builds, and competition work.</p>
+            <a href="#projects" class="hero-link">View Below</a>
+        </section>
+
+        <section id="projects" class="projects">
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="../static/images/venatio.png" alt="NASA Artemis mission simulation screenshot">
+                </div>
+                <div class="project-details">
+                    <p class="project-number">// 01</p>
+                    <h3>Venatio</h3>
+                    <div class="project-section">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            This application simulates NASA's Artemis II mission and helps users understand mission
+                            movement, data, and spacecraft behavior through an interactive technical model.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Technical Stack</h4>
+                        <ul>
+                            <li>Languages: HTML5, CSS3, JavaScript, GLSL</li>
+                            <li>Tools: P5.js, React, GSAP, React Native, Expo</li>
+                        </ul>
+                    </div>
+                    <div class="project-section">
+                        <h4>Process & Reflection</h4>
+                        <p>
+                            Our team used an Agile workflow to keep development flexible across the web simulation,
+                            mobile app, and informational website. We split the work into separate GitHub repositories,
+                            checked in regularly before committing major changes, and used feedback from student testers
+                            to improve usability, including adding menu tooltips after testers struggled without
+                            instructions. A major challenge was making Venatio run smoothly on low-powered and mobile
+                            devices. During debugging, we found memory issues caused by high-resolution textures,
+                            browser engine differences, and iOS WebView limitations. To solve this, we reduced texture
+                            quality from 8K to 4K on mobile, redesigned the menu for smaller screens, and ported the
+                            experience through React Native WebView, reducing RAM usage from about 1.5 GB to roughly
+                            350 MB while keeping the simulation accessible.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Artifacts</h4>
+                        <a href="https://github.com/stratjam/hostedNASAADC" target="_blank"
+                            rel="noopener noreferrer">GitHub Repository</a>
+                        <a href="https://venatio.app" target="_blank" rel="noopener noreferrer">View Demo</a>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="../static/images/eduflash.png" alt="EduFlash learning platform screenshot">
+                </div>
+                <div class="project-details">
+                    <p class="project-number">// 02</p>
+                    <h3>Eduflash</h3>
+                    <div class="project-section">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            This platform supports accessible education by helping students from underrepresented
+                            communities discover and engage with learning resources for free.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Technical Stack</h4>
+                        <ul>
+                            <li>Languages: HTML5, CSS3, Javascript, Python, SQL</li>
+                            <li>Tools: OpenAI API, PostgreSQL, AWS, Flask</li>
+                        </ul>
+                    </div>
+                    <div class="project-section">
+                        <h4>Process & Reflection</h4>
+                        <p>
+                            We designed EduFlash around the idea that free education should be reliable, community
+                            supported, and accessible to anyone with basic internet access. Our process started with
+                            narrowing a large social problem into a platform where users could create guides, follow
+                            structured learning paths, rate resources, discuss accuracy, and use AI-assisted guide
+                            creation in multiple languages. We intentionally built the frontend with vanilla JavaScript
+                            so the platform would stay lightweight and efficient, then connected it to a Flask backend,
+                            PostgreSQL database, and AWS hosting. The biggest challenge was integrating several moving
+                            parts under a tight hackathon timeline. Debugging focused on making sure authentication,
+                            guide creation, database storage, and hosted deployment worked together securely. We
+                            overcame this by prioritizing core features, setting deadlines in Jira, and adapting quickly
+                            when scope or integration issues appeared.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Artifacts</h4>
+                        <a href="https://github.com/emanuelwertman/EduFlash" target="_blank" rel="noopener noreferrer">GitHub Repository (Frontend)</a>
+                        <a href="https://github.com/neilkumaran/EduFlashBackend" target="_blank" rel="noopener noreferrer">GitHub Repository (Backend)</a>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="../static/images/engineering.jpg" alt="EduFlash learning platform screenshot">
+                </div>
+                <div class="project-details">
+                    <p class="project-number">// 03</p>
+                    <h3>Tavio</h3>
+                    <div class="project-section">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            This app helps visually impaired users order food more easily by reducing friction in menu
+                            navigation and selection.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Technical Stack</h4>
+                        <ul>
+                            <li>Languages: HTML5, CSS3, JavaScript, Python, SQL, Dart</li>
+                            <li>Tools: Flutter, PostgreSQL, AWS</li>
+                        </ul>
+                    </div>
+                    <div class="project-section">
+                        <h4>Process & Reflection</h4>
+                        <p>
+                            We designed Tavio around the problem that restaurant menus are overwhelmingly visual, which
+                            makes ordering slower and less independent for visually impaired users. Our design process
+                            focused on four core requirements: the app had to be accessible, fast to order from, simple
+                            to navigate, and reliable enough for a real restaurant setting. We built the mobile
+                            experience with Dart and Flutter, connected it to a PostgreSQL-backed system, and tested the
+                            ordering flow to find places where users could get confused or slowed down. One major
+                            challenge was turning a normally visual task into a clear step-by-step interaction without
+                            adding too much friction. Debugging was not just about fixing code errors; it also meant
+                            testing the user flow, identifying where the interface failed accessibility expectations,
+                            and refining the experience so ordering felt direct and usable.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Artifacts</h4>
+                        <a href="https://github.com/Np3-0/Tavio-Frontend" target="_blank" rel="noopener noreferrer">GitHub Repository (Frontend)</a>
+                        <a href="https://github.com/atharvausturge/Tavio-Backend" target="_blank" rel="noopener noreferrer">GitHub Repository (Backend)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="../static/images/engineering.jpg" alt="EduFlash learning platform screenshot">
+                </div>
+                <div class="project-details">
+                    <p class="project-number">// 04</p>
+                    <h3>TSA Engineering Design 2026</h3>
+                    <div class="project-section">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            This engineering design project proposes a microfluidic approach for detecting signs of life
+                            on Europa, one of Jupiter's moons.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Technical Stack</h4>
+                        <ul>
+                            <li>Languages: HTML5, CSS3, JavaScript, SCAD, C++</li>
+                            <li>Tools: SCAD</li>
+                        </ul>
+                    </div>
+                    <div class="project-section">
+                        <h4>Process & Reflection</h4>
+                        <p>
+                            Our design process started with researching the extreme constraints of Europa, including
+                            cryogenic ice, radiation, limited power, contamination risk, and the need for direct
+                            subsurface samples. We compared multiple concepts, including an ultrasonic-thermal probe,
+                            automated mapping drones, and a drill with an integrated microfluidic sampling chip. After
+                            weighing each option's advantages and drawbacks, we chose a combined MSES design because it
+                            provided direct ice penetration, real-time analysis, contamination control, and efficient
+                            sample movement in one system. A major challenge was turning a complex scientific idea into
+                            a feasible prototype plan. We worked through this by sketching system layouts, modeling the
+                            drill and chip in CAD, planning the circuit and fluid flow, and designing tests for sample
+                            movement, signal processing, durability, and collection accuracy. The project pushed us to
+                            think like engineers: define the problem, research existing technology, test assumptions,
+                            iterate from results, and refine the final design for compactness and long-term mission use.
+                        </p>
+                    </div>
+                    <div class="project-section">
+                        <h4>Artifacts</h4>
+                        <a href="https://canva.link/3wgljhpfklvr1x3" target="_blank" rel="noopener noreferrer">Project Documentation</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="../scripts/script.js" defer></script>
+</body>
+
+</html>
